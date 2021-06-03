@@ -5,6 +5,6 @@ describe DockingStation do
 
   it 'releases working bikes' do
     bike = subject.release_bike
-    expect(bike).to be_working
+    expect(bike).to respond_to(:working?)
   end
 end
